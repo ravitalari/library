@@ -1,7 +1,16 @@
 ## Library Management
 Its shows about the available books in the Library and to add new book details 
 
-## Available Scripts
+## Softwares Requires
+Node Version 12+
+npm Version 6+
+Browser: Chrome
+
+## Steps to execute the project
+
+## git clone https://github.com/ravitalari/library.git
+
+## cd library
 
 In the project directory, you can run:
 ### `npm install`
