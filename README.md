@@ -1,5 +1,14 @@
 ## Library Management
-Its shows about the available books in the Library and to add new book details 
+Project to show Available books in the Library and to add new book details
+
+## Project Design plan
+
+1) Creating the List View of the Books
+2) Creating the Create View of the Books
+3) Implementing Redux store for State Management
+4) Storing the created Books in store
+5) Implemented Router Functionality
+6) Once Book got created navigating the user to List View
 
 ## Softwares Requires
 Node Version 12+
@@ -12,7 +21,6 @@ Browser: Chrome
 
 ## cd library
 
-In the project directory, you can run:
 ### `npm install`
 
 ### `npm start`

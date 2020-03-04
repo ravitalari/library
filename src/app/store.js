@@ -2,6 +2,8 @@ import {createStore, combineReducers} from 'redux';
 
 import {libraryReducer} from '../app/state/reducers/libraryReducer';
 
+// if more than one reducer is available then only we need
+// to use combineReducers
 
 const rootReducer = combineReducers({
     libraryReducer

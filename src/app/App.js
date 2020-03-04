@@ -6,6 +6,9 @@ import Footer from './common/Footer';
 import NotFound from './common/NotFound';
 import {Route, Switch} from 'react-router-dom';
 
+
+// Parent componet which is responsible
+// to load all other components
 class App extends React.Component {
     render() {
         return(
