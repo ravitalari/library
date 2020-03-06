@@ -8,22 +8,25 @@ class ListBooks extends React.Component {
                 <h1>Books List</h1>
                 <table>
                     <thead>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Count</th>
-                        <th>Author</th>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Count</th>
+                            <th>Author</th>
+                            <th>Library Id</th>
+                        </tr>
                     </thead>
                     <tbody>
                         
-                        {this.props.books.map(book => {
-                        return (
-                            <tr> 
-                                <TableRow book={book} />
-                            </tr>
-                        )
-                    })}
+                    {this.props.books.map(book => {
+                            return (
+                                <tr> 
+                                    <TableRow book={book} />
+                                </tr>
+                            )
+                        })
+                    }
                         
-                    
                     </tbody>
                 </table>
                 
