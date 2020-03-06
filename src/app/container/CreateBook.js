@@ -3,7 +3,7 @@ import CreateBook from "../components/CreateBook";
 import * as ActionTypes from '../state/action-type';
 
 export const mapStateToProps = (state) => {
-    return {};
+    return {state};
 }
 
 export const mapDispatchToProps = (dispatch) => ({
