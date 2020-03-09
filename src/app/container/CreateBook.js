@@ -1,5 +1,6 @@
 import {connect} from "react-redux";
 import CreateBook from "../components/CreateBook";
+import * as actions from  "../state/actions";
 import * as ActionTypes from '../state/action-type';
 
 export const mapStateToProps = (state) => {
@@ -8,7 +9,7 @@ export const mapStateToProps = (state) => {
 
 export const mapDispatchToProps = (dispatch) => ({
     CreateBook: function(book) {
-        dispatch({type:ActionTypes.CREATE_BOOK,book});
+        dispatch(actions.CreateBook(book));
     },
 })
 //create and retruns a container
