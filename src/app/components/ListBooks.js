@@ -10,13 +10,17 @@ class ListBooks extends React.Component {
     searching = () => {
         this.properties = [...this.props.books];
         const searchItems = this.properties.filter((item)=> {
-            if (item.name.includes(this.search.current.value)) {
+            let searchTerm = this.search.current.value.toLowerCase();
+            let name = item.name.toLowerCase();
+            let desc = item.description.toLowerCase();
+            let author = item.author.toLowerCase();
+            if (name.includes(searchTerm)) {
                 return item;
             }
-            if (item.author.includes(this.search.current.value)) {
+            if (desc.includes(searchTerm)) {
                 return item;
             }
-            if (item.description.includes(this.search.current.value)) {
+            if (author.includes(searchTerm)) {
                 return item;
             }
         });
@@ -30,6 +34,8 @@ class ListBooks extends React.Component {
         return(
             <div>
                 <h1>Books List</h1>
+                <input type='text' placeholder='Search' ref= {this.search} onChange={()=> this.searching()} />
+        
                 <table>
                     <thead>
                         <tr>
@@ -52,7 +58,6 @@ class ListBooks extends React.Component {
                     
                     </tbody>
                 </table>
-                <input type='text' placeholder='Search' ref= {this.search} onChange={()=> this.searching()} />
             </div>
         )
     }
