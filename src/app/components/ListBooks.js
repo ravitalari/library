@@ -8,12 +8,15 @@ class ListBooks extends React.Component {
         this.properties = [...this.props.books];
     }
     searching = () => {
-        this.properties = [...this.props.bookss];
+        this.properties = [...this.props.books];
         const searchItems = this.properties.filter((item)=> {
             if (item.name.includes(this.search.current.value)) {
                 return item;
             }
             if (item.author.includes(this.search.current.value)) {
+                return item;
+            }
+            if (item.description.includes(this.search.current.value)) {
                 return item;
             }
         });
